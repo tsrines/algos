@@ -8,3 +8,22 @@ class Solution {
     return false
   }
 }
+
+class Solution {
+  solve(nums, k) {
+      
+      // nums.sort((a,b)=> a-b)
+      let total = 0 
+      // if(nums.length === 1) return 0
+      // if(k===0) return -1
+      
+      for(let i = 1; i < nums.length; i++){
+          nums[i]+=nums[i-1]
+          
+      }
+      for(let i = nums.length-1; i >=0; i--){
+          if(nums[i]<=k) return i
+      }
+      return -1
+  }
+}

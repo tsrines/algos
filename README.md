@@ -61,3 +61,23 @@ true
 Explanation
 
 You can stand at s[0]
+
+K Prefix
+Given a list of integers nums and an integer k, return the maximum possible i where nums[0] + nums[1] + ...  + nums[i] ≤ k. Return -1 if no valid i exists.
+
+Constraints
+
+Length of nums ≤ 1000
+-1,000 ≤ nums[i] ≤ 1,000
+k ≤ 10^9
+Example 1
+Input
+
+nums = [3, -5, 4, 1, 6]
+k = 4
+Output
+
+3
+Explanation
+
+The largest i here is 3, since we have nums[0] + ... + nums[3] = 3 and if we added the next number (6) the sum would no longer be less than k.
